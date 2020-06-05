@@ -5,20 +5,20 @@ import java.util.*;
 /**
  * Clase para guardar archivo.
  */
-public class saveFile extends Actor
+public class RecordsManager 
 {
-    Nivel mundoActual = (Nivel)getWorld();
-    private String userName;
-    private int score = mundoActual.score;
+    
+   
+   
     /**
      * Clase para escribir en archivo.
      */
-    public void manejaArchivo(String userName){
-
+    public void guardaArchivo(String userName, int score){
+        
         String cadena = Integer.toString(score);
         try{
             File archivo = new File("Rtexto.txt");
-
+            
             FileWriter escribir = new FileWriter(archivo, true);
             escribir.write(userName);
             escribir.write(",");

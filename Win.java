@@ -6,7 +6,7 @@ import greenfoot.*;
 public class Win extends Actor
 {
     private String userName;
-    saveFile guardaArchivo = new saveFile();
+    RecordsManager guardaArchivo = new RecordsManager();
     /**
      * Constructor.
      */
@@ -25,7 +25,7 @@ public class Win extends Actor
         if(userName == null){
           userName = Greenfoot.ask("Captura el nombre: ");   
         }
-        guardaArchivo.manejaArchivo(userName);
+        guardaArchivo.guardaArchivo(userName, Nivel.score);
         Greenfoot.setWorld(new Credits());
     } 
 }

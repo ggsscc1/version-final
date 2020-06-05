@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=saveFile
+comment0.target=RecordsManager
 comment0.text=\r\n\ Clase\ para\ guardar\ archivo.\r\n
-comment1.params=userName
-comment1.target=void\ manejaArchivo(java.lang.String)
+comment1.params=userName\ score
+comment1.target=void\ guardaArchivo(java.lang.String,\ int)
 comment1.text=\r\n\ Clase\ para\ escribir\ en\ archivo.\r\n
 numComments=2

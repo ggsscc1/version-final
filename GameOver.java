@@ -4,8 +4,9 @@ import greenfoot.*;
  */
 public class GameOver extends Actor
 {
+    
     private String userName;
-    saveFile guardarArchivo = new saveFile();
+    RecordsManager guardarArchivo = new RecordsManager();
     /**
      * Metodo para configurar imagen.
      */
@@ -17,11 +18,12 @@ public class GameOver extends Actor
     }   
     public void work() 
     {
+        
         Greenfoot.delay​(50);
         if(userName == null){
           userName = Greenfoot.ask("Captura el nombre: ");   
         }
-        guardarArchivo.manejaArchivo(userName);
+        guardarArchivo.guardaArchivo(userName, Nivel.score);
         Greenfoot.setWorld(new Credits());
     } 
 }
