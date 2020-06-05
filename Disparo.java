@@ -44,10 +44,10 @@ public class Disparo extends Actor
         Actor Mono = getOneObjectAtOffset(0,0,Mono.class);
         if(Mono!=null)
         {
-            Nivel w = (Nivel)getWorld();
+            Nivel actualWorld = (Nivel)getWorld();
             getWorld().removeObject(Mono);
-            w.puntos.incrementar();
-            w.score++;
+            actualWorld.puntos.incrementar();
+            actualWorld.score++;
         }
     }
     /**

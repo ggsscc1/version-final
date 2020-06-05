@@ -5,5 +5,5 @@ comment1.params=
 comment1.target=GameOver()
 comment1.text=\r\n\ Metodo\ para\ configurar\ imagen.\r\n
 comment2.params=
-comment2.target=void\ act()
+comment2.target=void\ work()
 numComments=3

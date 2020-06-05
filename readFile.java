@@ -7,37 +7,45 @@ import java.util.*;
  */
 public class readFile extends Actor
 {
-    List<String> lista = new ArrayList<>();
+    List<Record> lista = new ArrayList<>();
     /**
      * Lee el archivo.
      */
-    public void act() 
+    public void leeArchivo() 
     {
+        
         try (FileReader fr = new FileReader("Rtexto.txt");
              BufferedReader br = new BufferedReader(fr)) {
             String linea = " ";
 
-            while (true) {
-                try {
-                    if (!((linea = br.readLine()) != null)) break;
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-                lista.add(linea);
+            while (((linea = br.readLine()) != null)) {
+                Record record = new Record();
+                String[] array = linea.split(",");
+                record.setName(array[0]);
+                record.setScore(Integer.parseInt(array[1].trim()));
+                lista.add(record);
             }
-
-            Iterator iter = lista.iterator();
+            lista.sort(new Comparator<Record>() {
+            @Override
+            public int compare(Record o1, Record o2) {
+                return o2.getScore() - o1.getScore();
+            }
+            });
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+            System.out.println("No existe el archivo");
         } catch (
                 IOException e) {
             e.printStackTrace();
+            System.out.println("Excepcion 2");
         }
     } 
+  
     /**
      * Regresa lista.
      */
-    public List<String> getList(){
+    public List<Record> getList(){
         return lista;
+        
     }
 }

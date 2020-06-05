@@ -19,7 +19,7 @@ public class Win extends Actor
     /**
      * Guarda archivo.
      */
-    public void act() 
+    public void work() 
     {
         Greenfoot.delay​(50);
         if(userName == null){

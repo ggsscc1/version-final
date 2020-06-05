@@ -48,6 +48,7 @@ public class Mono extends Actor
              if(world.vidas.obtenerValor() <= 0)
             {
                 GameOver showGO = new GameOver();
+                showGO.work();
                 getWorld().addObject(showGO,((getWorld().getWidth()/2)),((getWorld().getHeight()/2)));
             }
         }

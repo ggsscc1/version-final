@@ -20,6 +20,7 @@ public class Level3 extends Nivel
     public void act(){
         if(Nivel.score == verifyWin){
            Win screenWin = new Win();
+           screenWin.work();
            addObject(screenWin, setWidthWin, setHeightWin);
         }
     }

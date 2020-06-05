@@ -1,24 +1,30 @@
-roberto 22
-francisco 3
-agus 10
-Mariana 14 
-Mari 4
-Andrea 21 
-Memo 11
-Andres 15
-Cristi 10
-ros 22
-jjj 22
-ffff 22
-gggg 22
-ko 22
-fffds 22
-dfdfdf 22
-ddd 5
-ddd 19
-ddd 0
-ddd 0
-ddd 2
-ddd 0
-ddd 0
-uhu 22
+roberto,22
+francisco,3
+agus,10
+Mariana,14
+Mari,4
+Andrea,21 
+Memo,11
+Andres,15
+Cristi,10
+ros,22
+jjj,22
+dirosfdddsss,0
+sdsds,0
+dd,0
+mari,18
+los,3
+ros,12
+ddd,20
+lop,8
+lop,5
+ras,5
+kdi,19
+los,0
+bar,0
+bar,0
+los,22
+lllo,12
+pooopaaañsl,9
+poaaa,5
+fin,22

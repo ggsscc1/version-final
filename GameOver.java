@@ -14,9 +14,8 @@ public class GameOver extends Actor
         setImage("game_over.jpg");
         Nivel.score = 0;
         Nivel.life = 3;
-        
     }   
-    public void act() 
+    public void work() 
     {
         Greenfoot.delay​(50);
         if(userName == null){

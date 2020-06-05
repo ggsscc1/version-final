@@ -7,7 +7,8 @@ import java.util.*;
 public class Credits extends World
 {
     readFile obtieneListaArchivo = new readFile(); 
-    List <String> lista;
+    
+    List<Record> lista = new ArrayList<>();
     /**
      * Constructor for objects of class Credits.
      * 
@@ -16,8 +17,8 @@ public class Credits extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        obtieneListaArchivo.act();
-        lista = obtieneListaArchivo.getList();
+        //
+        
         prepare();
     }
     /**
@@ -25,12 +26,14 @@ public class Credits extends World
      */
     private void prepare()
     {
+        obtieneListaArchivo.leeArchivo();
         int creditPositionY = 75;
-        Collections.sort(lista);
+        lista = obtieneListaArchivo.getList();
+        //System.out.println(lista.get(0).getName());
         for(int i = 0; i < 10; i ++){
            
             creditPositionY += 25;
-            showText(lista.get(i), 100, creditPositionY);
+            showText(lista.get(i).getName()+lista.get(i).getScore(), 100, creditPositionY);
            
         }
         Greenfoot.stop();

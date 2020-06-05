@@ -21,7 +21,7 @@ public class saveFile extends Actor
 
             FileWriter escribir = new FileWriter(archivo, true);
             escribir.write(userName);
-            escribir.write(" ");
+            escribir.write(",");
             escribir.write(cadena);
             
             escribir.write("\r\n");
@@ -30,5 +30,5 @@ public class saveFile extends Actor
             System.out.println("Error al escribir");
         }
     }
-
+   
 }
