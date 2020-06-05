@@ -16,3 +16,9 @@ fffds 22
 dfdfdf 22
 ddd 5
 ddd 19
+ddd 0
+ddd 0
+ddd 2
+ddd 0
+ddd 0
+uhu 22

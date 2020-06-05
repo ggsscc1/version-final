@@ -14,9 +14,11 @@ public class GameOver extends Actor
         setImage("game_over.jpg");
         Nivel.score = 0;
         Nivel.life = 3;
+        
     }   
     public void act() 
     {
+        Greenfoot.delay​(50);
         if(userName == null){
           userName = Greenfoot.ask("Captura el nombre: ");   
         }

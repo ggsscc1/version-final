@@ -15,13 +15,13 @@ public class Win extends Actor
         setImage("Win.png");
         Nivel.score = 0;
         Nivel.life = 3;
-        //public static void delay​(10);
     }
     /**
      * Guarda archivo.
      */
     public void act() 
     {
+        Greenfoot.delay​(50);
         if(userName == null){
           userName = Greenfoot.ask("Captura el nombre: ");   
         }
